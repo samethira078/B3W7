@@ -1,5 +1,15 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+#link{
+  text-decoration: none;
+}
 #menu{
   .col-md-12{
+    height: 50px;
     background-color:#22223b;
     ul{
       li{
@@ -7,6 +17,7 @@
         display: inline-block;
         list-style: none;
         a{
+          line-height: 50px;
           padding: 10px;
           font-family: 'Roboto Mono', monospace;
           font-size: 18px;
@@ -32,9 +43,74 @@
   }
 }
 
-#content{
-  .col-md-4{
-    width: 200px;
-    height: 200px;
+#kop{
+  .col-md-2{
+    background-color: #143642;
+    height: 120px;
+    border-bottom: 10px solid black;
   }
+  .col-md-8{
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    border-top: 10px solid black;
+    h1{
+      line-height: 100px;
+      text-align: center;
+    }
+  }
+}
+
+#content{
+  margin-top: 30px;
+  .col-md-4:hover{
+    transition: 1s;
+    background-color: rgb(214, 214, 214);
+  }
+  .col-md-4{
+    height: 240px;
+    position: relative;
+    margin-bottom: 70px;
+    h1{
+      text-transform: uppercase;
+      color: black;
+      position: relative;
+      top: 25px;
+      padding-bottom: 5px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 20px;
+    }
+    img{
+      border: 5px solid black;
+      position: relative;
+      width: 170px;
+      height: 150px;
+      border-radius: 50%;
+      left: 50%;
+      top: 20px;
+      transform: translateX(-50%);
+    }
+    .fas{
+      padding-right: 5px;
+    }
+    .fa-heartbeat{
+      color: rgb(167, 47, 47);
+    }
+    .fa-khanda{
+      color: rgb(39, 91, 170);
+    }
+    .fa-shield-alt{
+      color: rgb(116, 122, 26);
+    }
+  }
+  .stats{
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    p{
+      padding: 0px 5px;
+    }
+  }
+
 }

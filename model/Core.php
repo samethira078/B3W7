@@ -18,9 +18,22 @@ class CRUB extends Database{
     $row = $stmt->fetchAll();
     return $row;
   }
+  //Check URL if valid or not
+  public function checkURL(){
+    //Pattern which it should follow
+    $pattern = "/^[0-9]{1,2}$/";
+    $url = $_GET["id"];
+    //Remove illegal characters
+    $url = filter_var($url, FILTER_SANITIZE_URL);
 
-
-
+    //Check if URL is valid
+    if(preg_match($pattern, $url)){
+      $sql = "SELECT * from characters WHERE id=?";
+      $stmt = $this->connection()->prepare($sql);
+      $stmt->execute([$url]);
+      $row = $stmt->fetchAll();
+      return $row;
+  }
 }
-
+}
 ?>
