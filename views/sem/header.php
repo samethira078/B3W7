@@ -1,18 +1,19 @@
-<div class="bootstrap-wrapper">
-<div class="container">
-  <div class="row">
-    <div class="col-md-8">
-      <ul>
-        <li><a href="#">Index</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      </div>
-      <div class="col-md-4">
+<head>
+
+</head>
+<body>
+  <div class="bootstrap-wrapper">
+  <div class="container">
+    <div id="menu" class="row">
+      <div class="col-md-12">
         <ul>
-          <li><a href="#">Sign In</a></li>
+          <li><i class="fas fa-indent"></i><a href="#">Index</a></li>
+          <li><i class="fas fa-images"></i><a href="#">Gallery</a></li>
+          <li id="upload"><i class="fas fa-pen-square"></i><a href="#">Upload</a></li>
         </ul>
+      </div>
     </div>
   </div>
-</div>
-</div>
+  </div>
+
+</body>
