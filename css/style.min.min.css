@@ -1,1 +1,1 @@
-.row .col-md-8{background-color:red}.row .col-md-4{background-color:green}
+#menu .col-md-12{background-color:#22223b}#menu .col-md-12 ul li{margin:0px 20px;display:inline-block;list-style:none}#menu .col-md-12 ul li a{padding:10px;font-family:'Roboto Mono', monospace;font-size:18px;text-decoration:none;color:white}#menu .col-md-12 ul .fas{margin-right:7.5px;color:#2b9348}#menu .col-md-12 ul .fa-pen-square{color:#fcbf49}#menu .col-md-12 a:hover{background-color:black;transition:1s}#menu #upload{float:right}#content .col-md-4{width:200px;height:200px}
