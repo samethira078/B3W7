@@ -21,7 +21,7 @@ require_once 'views/sem/footer.php';
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
    <script src="https://kit.fontawesome.com/2b9f2aef98.js" crossorigin="anonymous"></script>
-   <title>Document</title>
+   <title>Character Layout</title>
  </head>
  <body>
  </body>

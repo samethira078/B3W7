@@ -46,6 +46,21 @@
   position: relative;
   top: 15px;
 }
+#uploadNew{
+  h1{
+    text-align: center;
+  }
+  form{
+    text-align: center;
+    textarea{
+      margin: 0 auto;
+    }
+    #submit{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
 
 #characterContent{
   margin-top: 30px;
