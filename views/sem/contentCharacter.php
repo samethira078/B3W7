@@ -1,3 +1,10 @@
+<?php
+  // Get glass
+  $varResult = $objectCRUB->checkURL();
+  // Check if ID exists
+  if(!empty($varResult)){
+    if(count($varResult) > 0){
+?>
 <div class="bootstrap-wrapper">
 <div class="container">
   <div id="characterTitle" class="row">
@@ -29,3 +36,9 @@
   </div>
 </div>
 </div>
+<?php
+}}
+else {
+  header("Location: index.php");
+}
+ ?>

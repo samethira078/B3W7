@@ -4,7 +4,7 @@
     <?php
     // Create column for each array
     foreach ($objectCRUB->grabInfo() as $rows) { ?>
-      
+
       <div class="col-md-4">
         <!-- Link to ID in character.php -->
         <a id="link" href="<?php echo "character.php?id=".$rows['id']; ?>">

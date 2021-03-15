@@ -4,6 +4,7 @@ require_once 'Database.php';
 
 
 class CRUB extends Database{
+    
   // Count amount of Index in DB
   public function countID(){
     $sql = "SELECT COUNT(name) FROM characters";
@@ -25,15 +26,23 @@ class CRUB extends Database{
     $url = $_GET["id"];
     //Remove illegal characters
     $url = filter_var($url, FILTER_SANITIZE_URL);
-
     //Check if URL is valid
     if(preg_match($pattern, $url)){
-      $sql = "SELECT * from characters WHERE id=?";
-      $stmt = $this->connection()->prepare($sql);
-      $stmt->execute([$url]);
-      $row = $stmt->fetchAll();
-      return $row;
+      $stmt = $this->connection()->prepare("SELECT * from characters WHERE id = :id");
+      $stmt->bindParam(':id', $url, PDO::PARAM_INT);
+      $stmt->execute();
+
+      if($amountRows = $url){
+        $row = $stmt->fetchAll();
+        return $row;
+      } else {
+        echo "twodwkdowdw";
+      }
   }
 }
+}
+
+class Uploads extends Database{
+
 }
 ?>
