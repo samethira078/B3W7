@@ -6,7 +6,7 @@ $objectCRUB = new CRUB();
 
 <?php
 // Require page layout
-require_once 'views/sem/header.php';
+require_once 'views/sem/nav.php';
 require_once 'views/sem/contentCharacter.php';
 require_once 'views/sem/footer.php';
 ?>

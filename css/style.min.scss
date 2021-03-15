@@ -42,6 +42,46 @@
     float: right;
   }
 }
+#characterTitle{
+  position: relative;
+  top: 15px;
+}
+
+#characterContent{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  img{
+    width: 300px;
+    height: 200px;
+  }
+  .col-md-3{
+    display: block;
+    p{
+       left: 0;
+       i{
+           position: absolute;
+           right: 0;
+
+       }
+       span{
+           float: left;
+           padding-right: 10px;
+       }
+       .fa-heartbeat{
+           color: rgb(167, 47, 47);
+       }
+       .fa-khanda{
+           color: rgb(39, 91, 170);
+       }
+       .fa-shield-alt{
+           color: rgb(116, 122, 26);
+       }
+       .fa-user-shield{
+           color:rgb(179, 128, 18)
+       }
+    }
+  }
+}
 
 #kop{
   .col-md-2{
